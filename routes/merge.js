@@ -76,7 +76,7 @@ const OUTPUTS_DIR = path.join(__dirname, '..', 'outputs');
 
 // FORCE HTTPS
 const getDownloadUrl = (req, filename) =>
-  `https://${req.get('host')}/outputs/${filename}`;
+  `http://${req.get('host')}/outputs/${filename}`;
 
 // ── POST /api/merge/pdfs ──
 
